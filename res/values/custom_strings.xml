@@ -248,4 +248,8 @@
     <string name="show_unac_and_overcounted_stats_title">Show unaccounted/overcounted stats</string>
     <string name="show_unac_and_overcounted_stats_summary">Show unaccounted and overcounted usage in battery statistics.</string>
 
+    <!-- Layers -->
+    <string name="bitsyko_layers">Layers Manager</string>
+
 </resources>
+
