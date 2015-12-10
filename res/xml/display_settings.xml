@@ -72,6 +72,14 @@
                 android:title="@string/lcd_density"
                 android:persistent="false" />
 
+	<PreferenceScreen
+                android:title="@string/quick_settings_title"
+                android:summary="@string/quick_settings_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.systemui"
+                    android:targetClass="com.android.systemui.tuner.QsActivity" />
+        </PreferenceScreen>
+
         <PreferenceScreen
                 android:key="display_rotation"
                 android:title="@string/display_rotation_title"
@@ -84,6 +92,14 @@
                 android:persistent="false"
                 android:entries="@array/screen_timeout_entries"
                 android:entryValues="@array/screen_timeout_values" />
+
+	<PreferenceScreen
+            android:title="@string/status_bar_icon_blacklist_title"
+            android:summary="@string/status_bar_icon_blacklist_summary" >
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+    	</PreferenceScreen>
 
         <ListPreference
             android:key="night_mode"
