@@ -146,4 +146,10 @@
                 android:title="@string/weather_icon_pack_title"
                 android:persistent="false" />
         </PreferenceCategory>
+
+        <PreferenceScreen
+                android:key="expanded_desktop"
+                android:title="@string/power_menu_expanded_desktop"
+                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
 </PreferenceScreen>
