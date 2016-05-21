@@ -21,6 +21,13 @@
                           android:enabled="false"
                           android:layout="@layout/nosp_logo_row" />
 
+        <!-- NOSP version -->
+        <Preference android:key="nosp_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/nosp_version"
+                android:summary="@string/nosp_version_default"
+                android:icon="@drawable/ic_nosp_about" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -89,12 +96,6 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/kernel_version"
                 android:summary="@string/device_info_default"/>
-
-        <!-- NOSP version -->
-        <Preference android:key="nosp_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/nosp_version"
-                android:summary="@string/nosp_version_default" />
 
         <!-- Device cpu info -->
         <Preference android:key="device_cpu"
